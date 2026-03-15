@@ -1,0 +1,214 @@
+/* ===== Body ===== */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg,#1e3c72,#2a5298);
+  color: #fff;
+  transition: 0.3s;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ===== Dark Mode ===== */
+.dark-mode {
+  background: linear-gradient(135deg,#0f172a,#1f2a44);
+  color: #fff;
+}
+
+/* ===== Navbar ===== */
+#navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#dev {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-size: 24px;
+  color: white;
+  font-weight: 600;
+  cursor: default;
+  transition: 0.3s;
+}
+#dev:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3),
+              inset 0 5px 5px rgba(255,255,255,0.2);
+}
+
+#toggle {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 12px 28px;
+  border-radius: 15px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+#toggle:hover {
+  background: rgba(255,255,255,0.25);
+  transform: scale(1.05);
+}
+
+/* ===== Widgets Row ===== */
+#widgets {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ===== Widgets ===== */
+.widget {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 25px 20px;
+  border-radius: 20px;
+  width: 250px;
+  text-align: center;
+  color: white;
+  transition: 0.3s;
+  cursor: default;
+  font-size: 18px;
+}
+.widget:hover {
+  box-shadow: 0 20px 25px rgba(0,0,0,0.3),
+              inset 0 5px 10px rgba(255,255,255,0.2);
+}
+
+.widget h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* ===== Clock ===== */
+#time {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* ===== Weather ===== */
+#weatherInfo {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* ===== Quote ===== */
+#quote {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+#newQuoteBtn {
+  background: linear-gradient(45deg,#ff6b6b,#f7d794);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+#newQuoteBtn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(255,255,255,0.4);
+}
+
+/* ===== Task ===== */
+#task input {
+  width: 80%;
+  padding: 6px 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border: none;
+}
+#task button {
+  background: linear-gradient(45deg,#5f27cd,#341f97);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+}
+#task button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255,255,255,0.3);
+}
+}
+
+/* ===== Task List ===== */
+#task ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+  text-align: left;
+}
+
+/* ===== Quick Links ===== */
+#links ul {
+  list-style: none;
+  padding-left: 0;
+}
+#links ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: 0.2s;
+}
+#links ul li a:hover {
+  text-decoration: underline;
+}
+
+#contactBtn {
+  background: linear-gradient(45deg,#1dd1a1,#10ac84);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+#contactBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255,255,255,0.4);
+}
+
+/* ===== Footer ===== */
+footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* ===== Dark Mode Widgets + Inputs ===== */
+.dark-mode .widget,
+.dark-mode #task input,
+.dark-mode #task button,
+.dark-mode #toggle {
+  background: rgba(255,255,255,0.05);
+  color: white;
+}
