@@ -12,4 +12,4 @@ An interactive personal dashboard built with **HTML, CSS, and JavaScript**.
 ### How to Use
 1. Clone the repo:
    ```bash
-   git clone https://github.com/Saadi1425/dev-dashboard.git
+   git clone https://github.com/Saadi1425/dev-dashboard.git"# Dev-dashboard" 
